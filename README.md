@@ -1,16 +1,28 @@
 
-Purpose:
-Gives a general overview of the project. It’s the first thing someone sees when they visit your GitHub repo.
+Purpose: Coursera assignment. Practice cleaning data sets.
 
 Contents typically include:
-Project title and description
+This project is part of the Johns Hopkins University Getting and Cleaning Data course on Coursera. The goal is to take raw data collected from the accelerometers of Samsung Galaxy S smartphones and transform it into a tidy dataset that can be used for further analysis.
 
-What the project does / what it's about
+How to Run the Script
+Download and unzip the UCI HAR Dataset.
 
-How to run the analysis (e.g., how to use run_analysis.R)
+Place the UCI HAR Dataset folder in your R working directory.
 
-Dependencies or setup instructions
+Run the run_analysis.R script. It will:
 
-Brief explanation of the files in the repo
+Merge training and test datasets
 
-Any assumptions or notes
+Extract mean and standard deviation measurements
+
+Use descriptive activity names
+
+Label the dataset with descriptive variable names
+
+Create a tidy dataset with averages by activity and subject
+
+The final tidy dataset will be written to tidy_dataset.txt.
+
+Files in the repo
+- run_analysis.R: code in R
+- Code Book: brief overview of the datasets, variables, and operations performed
