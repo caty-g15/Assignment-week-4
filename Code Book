@@ -1,0 +1,21 @@
+# Assignment-week-4
+The original dataset was collected from the accelerometers and gyroscopes of the Samsung Galaxy smartphone. It is part of the Human Activity Recognition Using Smartphones Dataset, available from the UCI Machine Learning Repository:
+
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphonesthe 
+
+The tidy dataset contains the average of each measurement variable for each activity and each subject. The data was processed from the original dataset using the steps outlined in the run_analysis.R script. Each row represents a unique combination of a subject and an activity. Each column (after the first two) represents the average of a specific measurement.
+
+Variables
+- Subject: ID number of the participant (from 1 to 30)
+- Activity: Activity level (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+- TimeBodyAccelerometerMeanX:  Mean of time-domain body accelerometer signal in the X direction
+- TimeBodyAccelerometerMeanY:  Mean of time-domain body accelerometer signal in the Y direction
+- TimeBodyAccelerometerMeanZ:  Mean of time-domain body accelerometer signal in the Z direction
+- The remaining variables follow similar naming conventions: they indicate the signal type (Time/Frequency), the sensor (Accelerometer/Gyroscope), the measurement (Mean/STD), and the axis (X/Y/Z or Magnitude) 
+
+Transformations Performed
+1. Merged the training and test datasets to create one unified dataset.
+2. Extracted only the measurements on the mean and standard deviation for each measurement.
+3. Replaced activity codes with descriptive activity names.
+4. Labeled the dataset with descriptive variable names by expanding abbreviations and removing punctuation.
+5. Created a second tidy dataset with the average of each variable for each activity and each subject.
